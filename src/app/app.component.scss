@@ -1,0 +1,101 @@
+.profile-card {
+    background-color: hsl(185, 75%, 39%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Kumbh Sans';
+    img.top-pattern, img.bottom-pattern {
+       overflow: hidden;
+    }
+
+    img.top-pattern {
+        transform: rotate(350deg);
+        margin-bottom: 270px;
+        position: relative;
+        right: 100px;
+    }
+
+    img.bottom-pattern {
+        transform: rotate(0deg);
+        position: relative;
+        top: 300px;
+        left: 50px;
+    }
+
+    .profile-details {
+        position: absolute;
+    }
+
+    .profile-details {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        border-radius: 10px;
+        background-color: white;
+        font-size: 18px;
+        .header {
+            background-image: url('../assets//bg-pattern-card.png');
+            height: 140px;
+            border-radius: 10px 10px 0px 0px;
+            display: flex;
+            justify-content: center;
+            img.profile {
+                border-radius: 50%;
+                position: absolute;
+                top: 88px;
+            }
+        }
+
+        .bold-text {
+            font-weight: 700;
+        }
+        .simple-text {
+            font-weight: 400;
+            color: #424447;
+        }
+
+        .basic-info {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgb(199, 183, 183);
+            .name-age {
+                margin-top: 10px;
+            }
+            .city {
+                margin-top: 5px;
+            }
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            .label {
+                font-size: 12px;
+            }
+            margin-bottom: 20px;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p {
+                margin-bottom: 0px;
+            }
+
+            .simple-text {
+                margin-top: 5px;
+            }
+        }
+    }
+}
